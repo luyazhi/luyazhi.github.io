@@ -1,0 +1,72 @@
+Page({
+  data: {
+    duration: 2000,
+    indicatorDots: true,
+    autoplay: true,
+    interval: 4000,
+    loading: false,
+    plain: false,
+    bannerImg:'[]',
+    
+  },
+  onLoad: function (options) {
+    //获去轮播信息   
+    var that = this;
+    var username = '13800138006';
+    var password = '123456';
+    var unique_id = '789789';
+    var key = 'shop';
+    var time = Date.now();
+    var sign = utilMd5.hexMD5(password + unique_id + username + time + key);
+    console.log(time);
+    console.log(sign);
+    // that = this;   
+    wx.request({
+      url: "https://flightvip.huyue-tech.com/fly/travelPackagePic/getAll",
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      method: "POST",
+      data: util.json2Form({
+        username: username,
+        password: password,
+        unique_id: unique_id,
+        time: time,
+        sign: sign
+      }),
+      success: function (res) {
+        that.setData({
+          bannerImg: res.data.result.ad,
+
+          goodsList: res.data.result.goods
+        })
+        console.log(res.data)
+        console.log(res.data.result.ad),
+          console.log(res.data.result.goods)
+      }
+    })
+
+
+
+
+
+
+
+
+    // 页面初始化 options为页面跳转所带来的参数  
+  },
+
+  onReady: function () {
+    // 页面渲染完成  
+  },
+  onShow: function () {
+    // 页面显示  
+  },
+  onHide: function () {
+    // 页面隐藏  
+  },
+  onUnload: function () {
+    // 页面关闭  
+  }
+
+})  

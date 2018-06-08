@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/index/reserve/reserve",
+    "pages/logs/logs",
+    "pages/logs/logins/logins"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐路线"  
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "行程"  
+      }
+    ]  
+  }
+}

@@ -1,0 +1,67 @@
+.container{
+  width: 100%;
+}
+.log-list-title{
+  font-size: 38rpx;
+  text-align: center;
+  display: block;
+  padding: 52rpx 0;
+  color: #4a4a4a;
+}
+.cared{
+  margin-top:20rpx; 
+  font-size: 30rpx;
+  width: 70%;
+  min-height: 230rpx;
+  background: #F8F8F8;
+  padding: 5%;
+  line-height: 45rpx;
+  margin: 0 auto;
+}
+.cared-title{
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  font-size:38rpx;
+}
+.cared-text,.cartext{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #4a4a4a;
+}
+.cartext{
+  color: #a2a2a2;
+  font-size: 30rpx;
+}
+.cared-btn{
+  width: 80%;
+  display: flex;
+  height: 60rpx;
+  border-top:1px solid #dbdbdb;
+  margin: 0 auto;
+}
+button::after{
+border: none;
+}
+.cared-btn button{
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  border: none;
+}
+.cared-btns{
+  width: 80%;
+  height: 60rpx;
+  border: 1px solid black;
+}
+.cared-btns button{
+  color: blue;
+  height: 60rpx;
+  line-height: 60rpx;
+}

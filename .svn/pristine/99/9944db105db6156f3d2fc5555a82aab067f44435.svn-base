@@ -1,0 +1,35 @@
+<template name="reserveIndent">
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove"></view>
+  <view class="modal-dialog">
+    <view class="modal-title">订单生成中</view>
+
+    <view class="modal-content">  
+        <view>到店时间：06月01日</view>
+        <view>到店地址：江西九江县路XX村</view>
+        <view>人数：2成人 0儿童</view>
+        <view>车辆：1 pickman 专用车</view>
+
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">返回修改</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>
+</template>
+
+<template name="choice_car">
+  <view class="modalmask" bindtap="hide_Modal"></view>
+  <view class="modaldialog">
+    <view class="modaltitle">车辆数量</view>
+    <view class="modalcontent line">
+      <view class="carlist">
+        <text class="textleftstyle">pickman<image></image></text>
+         <view class="itembox itembox3">
+          <text class="butstyle">-</text>
+          <input type='text' class="inputstylex" placeholder='0'></input>
+          <text class="butstyle">+</text>
+        </view>
+      </view>
+    </view>
+    <view class="modal-footer centent">确认</view>
+  </view>
+</template>

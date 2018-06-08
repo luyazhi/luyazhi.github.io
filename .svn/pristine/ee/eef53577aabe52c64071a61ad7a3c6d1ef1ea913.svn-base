@@ -1,0 +1,183 @@
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 540rpx;
+  height:375rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: auto;
+
+
+}
+.modal-title {
+  width: 90%;
+  margin-left: 5%;
+  padding: 15rpx 0rpx 15rpx 0rpx;
+  font-size: 28rpx;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  border-bottom:1px solid gainsboro; 
+}
+
+.modal-content {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  height: 235rpx;
+  padding-left: 20rpx;
+
+}
+.modal-content view{
+  width: 100%;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+
+input-holder {
+  color: #666;
+  font-size: 32rpx;
+}
+.modal-footer {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  border-top: 1px solid #dedede;
+  font-size: 28rpx;
+  line-height: 70rpx;
+}
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+
+
+.modalmask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modaldialog {
+  width: 540rpx;
+  height:375rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: auto;
+  border-radius:8rpx;
+}
+.modaltitle {
+  padding-top: 30rpx;
+  font-size: 32rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modalcontent {
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  height:170rpx;
+  padding-left: 20rpx;
+}
+.modalcontent view{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+}
+
+inputholder {
+  color: #666;
+  font-size: 32rpx;
+}
+.modalfooter {
+  display: flex;
+  flex-direction: row;
+  height: 75rpx;
+  border-top: 1px solid #dedede;
+  font-size: 28rpx;
+  line-height: 75rpx;
+}
+
+
+
+.centent{
+ text-align:center;
+display:block;
+color:#fdaf00;
+font-size:35rpx;
+letter-spacing:3px;
+border: none;
+
+}
+.line{
+ border:1px solid #ccc;
+margin:14px;
+border-left:none;
+border-right:none;
+
+}
+.carlist{
+  display:flex;
+
+}
+.carlist .itembox .butstyle {
+ overflow:inherit;
+ padding:0;
+margin:0;
+
+
+}
+.carlist .itembox .inputstylex {
+ 
+  height:24px;
+line-height:24px;
+
+}
+.textleftstyle{
+  line-height:41rpx;
+  margin:20px 14px 0 0px;
+
+}
+.carlist .itembox {
+  margin:20px 14px 0 24px;
+
+}

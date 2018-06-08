@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<view class='container' scroll-x="true">
+ <navigator url="../index/detail/detail?title=111">
+  <view class="con-wrap ripple {{cardRightIn?'flipInY':''}} {{cardLeftIn?'fadeInLeft':''}}" wx:for="{{list}}" wx:if="{{index==currentIndex}}" wx:key="{{item._id}}" id="{{item.index}}">
+    <view class='card-box card{{ id + 1 }}' bindscroll="getSelectItem" bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">
+      <image wx:if="{{item.imgurl}}" class="card-img" style="background-image:url('{{item.imgurl}}')"></image>
+      <view class='card-title'>{{item.title}}</view>
+      <view class='card-time'>{{item.time}}</view>
+    </view>
+  </view>
+  </navigator>
+</view>

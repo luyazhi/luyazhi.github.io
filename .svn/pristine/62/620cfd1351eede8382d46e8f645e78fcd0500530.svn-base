@@ -1,0 +1,4 @@
+<view class='logins'>
+  <title class="logins-title">登录以查看和记录你的行程</title>
+  <button class="logins-btn" >登录</button>
+</view>

@@ -1,0 +1,47 @@
+/**app.wxss**/
+@import '/utils/ripples.min.wxss';
+.card-box {
+  width: 80vw; 
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  border:1px solid #eee;
+  padding-bottom: 20px;
+  box-shadow: 0 0 24rpx 0 rgba(0, 0, 0, 0.06), 0 1rpx 0 0 rgba(0, 0, 0, 0.02); 
+  height:440px;
+
+}
+.con-wrap .card-box.card1 {
+  /*top: 62px;
+  left: 25px;*/
+  transform: translateY(0px) translateX(25px);
+  z-index: 3
+}
+.con-wrap .card-box.card1 .card_info {
+  bottom: 0;
+  left: 20px;
+  /*transform: translateY(270px) translateX(20px);*/
+}
+.con-wrap .card-box.card2 {
+  /*top: 44px;
+  left: 41px;*/
+  z-index: 2;
+  transform: translateY(0px) translateX(41px);
+}
+.con-wrap .card-box.card2 .card_info {
+  top: 195px;
+  left: 14px;
+}
+
+.con-wrap .card-box.card3 {
+  /*top: 28px;
+  left: 51px;*/
+  transform: translateY(0px) translateX(51px);
+  z-index: 1;
+}
+
+.con-wrap .card-box.card3 .card_info {
+  top: 73px;
+  left: 50px;
+}
+

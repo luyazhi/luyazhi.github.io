@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+
+  <view class="container log-list">
+  <title class="log-list-title">到店时间：06月01日</title>
+  <view class='cared'>
+    <text class='cared-title'>桃花潭位于泾县以西40公里处桃花潭位于泾县以西40公里处桃花潭位于泾县以西40公里处</text>
+    <view class='cared-text'>
+      <text>集合地：江西九江县路XX村</text>
+      <text>查看地图</text>
+    </view>
+    <view>
+      <text>人数：2成人 0儿童</text>
+    </view>
+  </view>
+  <view class='cared-btn' wx:if="{{share}}">
+      <button>已支付</button>
+      <button open-type="share" bindtouchend="ShareAppMessage">分享好友</button>
+      <button>订单问题</button>
+  </view>
+  <view class='cared-btns' wx:if="{{shares}}">
+      <button url="pages/index/reserve/reserve">我也要预定</button>
+  </view>
+</view>

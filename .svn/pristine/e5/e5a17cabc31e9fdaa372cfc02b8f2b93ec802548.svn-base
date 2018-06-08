@@ -1,0 +1,64 @@
+<!--logs.wxml-->
+
+<view class="container log-list" >
+  <title class="log-list-title">到店时间：06月01日</title>
+  <view class='cared'>
+    <text class='cared-title'>探密金秋童话+体验丝路之美...</text>
+    <view class='cared-text'>
+      <text>嘉峪关/额济纳旗/嘉峪关小环线</text>
+    </view>
+    <view class='cared-text'>
+      <text>3日包车游</text>
+    </view>
+    <view class='container-text'>
+      <view class='cartext'>
+        <text>到店地址：江西九江XX市</text>
+        <text>查看地图</text>
+      </view>
+      <text>人数：2成人,0儿童</text>
+      <text>车辆：1辆pickman，两辆其他车型</text>
+      <text>费用：￥1,200</text>
+    </view>
+
+  </view>
+  <view class='cared-btn' wx:if="{{share}}">
+    <button style='color:#F8BD00'>未支付</button>
+    <button open-type="share" bindtouchend="ShareAppMessage">分享好友</button>
+    <button>订单问题</button>
+  </view>
+  <view class='cared-btns' wx:if="{{shares}}">
+    <button url="pages/index/reserve/reserve">我也要预定</button>
+  </view>
+</view>
+
+<view class="container log-list" style='margin-bottom:60rpx;'>
+  <title class="log-list-title">到店时间：06月01日</title>
+  <view class='cared'>
+    <text class='cared-title'>探密金秋童话+体验丝路之美...</text>
+    <view class='cared-text'>
+      <text>嘉峪关/额济纳旗/嘉峪关小环线</text>
+    </view>
+    <view class='cared-text'>
+      <text>3日包车游</text>
+    </view>
+    <view class='container-text'>
+      <view class='cartext'>
+        <text>到店地址：江西九江XX市</text>
+        <text>查看地图</text>
+      </view>
+      <text>人数：2成人,0儿童</text>
+      <text>车辆：1辆pickman，两辆其他车型</text>
+      <text>费用：￥1,200</text>
+    </view>
+
+  </view>
+  <view class='cared-btn' wx:if="{{share}}">
+    <button>已支付</button>
+    <button open-type="share" bindtouchend="ShareAppMessage">分享好友</button>
+    <button>订单问题</button>
+  </view>
+  <view class='cared-btns' wx:if="{{shares}}">
+    <button url="pages/index/reserve/reserve">我也要预定</button>
+  </view>
+</view>
+
